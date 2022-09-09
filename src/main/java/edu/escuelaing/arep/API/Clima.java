@@ -29,9 +29,9 @@ public class Clima {
     }
 
     public static String script() {
-        return "<script type=\"text/javascript\">let url = \"https://api.openweathermap.org/data/2.5/weather?q=\"\n" +
+        return "<script type=\"text/javascript\">let url = \"https://parcialdiego.herokuapp.com/consulta?lugar=\"\n" +
                 "function consultar(){\n" +
-                "fetch(url+document.getElementById(\"nombre\").value + \"&appid=b441b3273b993da746c237520044ce76\")\n" +
+                "fetch(url+document.getElementById(\"nombre\").value)\n" +
                 "  .then(response => response.json())\n" +
                 ".then(data => {\n" +
                 "document.getElementById(\"city\").innerHTML = data.name\n" +
